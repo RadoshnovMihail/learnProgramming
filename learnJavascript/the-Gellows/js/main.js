@@ -8,6 +8,10 @@ let words = [
   "пухля",
   "гренда",
   "кэнди",
+  "зусс",
+  "бабулита",
+  "пасифика",
+  "дэрил",
 ];
 let word = words[Math.floor(Math.random() * words.length)];
 
@@ -27,12 +31,12 @@ while (remainingLetters > 0) {
     alert("Пожалуйста, введи только одну букву.");
   } else {
     for (let j = 0; j < word.length; j++) {
-      if (word[j] === guess) {
-        answerArray[j] = guess;
+      if (word[j] === guess.toLowerCase()) {
+        answerArray[j] = guess.toLowerCase();
         remainingLetters--;
       }
     }
   }
 }
 alert(answerArray.join(" "));
-alert("Отлично! Было загадано слово " + word);
+alert("Отлично! Было загадано имя " + word);
