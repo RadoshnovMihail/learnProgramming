@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.treasure-map {
+  width: 400px;
+  height: 400px;
+  background-image: url("/find_the_treasure/images/map.jpg");
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+}
+
+p {
+  font-size: 40px;
+  color: brown;
+  margin-left: 60px;
+}

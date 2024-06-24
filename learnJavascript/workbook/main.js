@@ -1,74 +1,92 @@
-let words = ["dog", "cat", "elephant", "sneak", "rabbit"];
+// const header = document.querySelector('h1');
+// let topPos = 0;
+// let leftPos = 0;
+// let step = 50;
+// let direction = 'right';
 
-//рандомное слово
-const randomWord = function (words) {
-  return words[Math.floor(Math.random() * words.length)];
-};
+// function moveHeader() {
+//     if (direction === 'right') {
+//         leftPos += step;
+//         if (leftPos >= 200) {
+//             leftPos = 200;
+//             direction = 'down';
+//         }
+//     } else if (direction === 'down') {
+//         topPos += step;
+//         if (topPos >= 200) {
+//             topPos = 200;
+//             direction = 'left';
+//         }
+//     } else if (direction === 'left') {
+//         leftPos -= step;
+//         if (leftPos <= 0) {
+//             leftPos = 0;
+//             direction = 'up';
+//         }
+//     } else if (direction === 'up') {
+//         topPos -= step;
+//         if (topPos <= 0) {
+//             topPos = 0;
+//             direction = 'right';
+//         }
+//     }
 
-// 1. Помещаем рандомное слово в переменную.
-//2. Создаем массив с загаданным словом.
-//3. Создаем счетчик попыток.
-// 4. Создаем переменную содержащую длинну слова.
-// 5. Создаем переменную содержащую допустимое количество попыток.
-const getSecretWord = function () {
-  let word = randomWord(words);
-  let findWord = new Array(word.length).fill("-");
-  let lengthWord = word.length;
-  let attemptCounter = 0; // счетчик попыток
-  let totalAttempts = 20; //всего попыток
-  return {
-    word: word,
-    findWord: findWord,
-    attemptCounter: attemptCounter,
-    lengthWord: lengthWord,
-    totalAttempts: totalAttempts,
-  };
-};
-console.log(getSecretWord());
+//     header.style.top = topPos + 'px';
+//     header.style.left = leftPos + 'px';
+// }
 
-const findLetterUser = function (letter, word, findWord) {
-  let condition = false;
-  for (let i = 0; i < word.length; i++) {
-    if (word[i] === letter) {
-      findWord[i] = letter;
-      condition = true;
+// setInterval(moveHeader, 1000); // Интервал в миллисекундах (здесь 1000 мс = 1 секунда)
+
+
+const header = document.querySelector('h1');
+let topPos = 0;
+let leftPos = 0;
+let step = 50;
+let direction = "right";
+
+function moveHeader() {
+  if (direction === "right") {
+    leftPos += 50;
+    if (leftPos >= 200) {
+      leftPos = 200;
+      direction = "down";
     }
   }
-  return condition;
-};
-
-function startGame() {
-  alert("Угадайте слово за 20 попыток");
-  let parameters = getSecretWord();
-  while (parameters.lengthWord > 0 || totalAttempts > 0) {
-    let findLetter = prompt(
-      "Угадайте букву, или нажмите Отмена для выхода из игры"
-    );
-    if (findLetter === null) {
-      return;
-    } else if (findLetter !== 1) {
-      alert("Пожалуйста, введите одиночную букву");
-    } else {
-      let condition = findLetter(
-        findLetter,
-        parameters.word,
-        parameters.findWord
-      );
-      if (condition) {
-        parameters.lengthWord--;
-        }
-      parameters.totalAttempts--;
-      parameters.attemptCounter++;
-    }
-    if (parameters.lengthWord === 0) {
-      alert(
-        `Поздравляем вы отгадали слово ${parameters.word} за ${parameters.attemptCounter} попыток`
-      );
-    }
-    if (parameters.totalAttempts === 0) {
-      alert(`Ваши попытки закончились, было загадано слово ${parameters.word}`);
+  if (direction === "down") {
+    topPos += 50;
+    if (topPos >= 200) {
+      topPos = 200;
+      direction = "left";
     }
   }
+  if (direction === "left") {
+    leftPos -= 50;
+    if (leftPos <= 0) {
+      leftPos = 0;
+      direction = "up";
+    }
+  }
+  if (direction === "up") {
+    topPos -= 50;
+    if (topPos <= 0) {
+      topPos = 0;
+      direction = "right";
+    }
+  }
+  header.style.top = topPos + "px";
+  header.style.left = leftPos + "px";
 }
 
-startGame();
+function clickCount(){
+    let count = 0;
+    while(count <= 800){
+        count++
+
+    }
+    }
+
+
+
+
+
+
