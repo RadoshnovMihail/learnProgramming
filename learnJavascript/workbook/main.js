@@ -184,12 +184,13 @@
 //   });
 // });
 
-window.addEventListener("load", function () {
-  document.getElementById("pic").addEventListener("click", function (event) {
-    if (event.target.tagName == "BUTTON") {
-      let getBtnId = event.target.id;
-      document.getElementById("im").src = "/images/anim/" + getBtnId + ".jpg";
-      document.getElementById("im").style.border = "1px solid #000000";
-    }
-  });
-});
+// window.addEventListener("load", function () {
+//   document.getElementById("pic").addEventListener("click", function (event) {
+//     if (event.target.tagName == "BUTTON") {
+//       let getBtnId = event.target.id;
+//       document.getElementById("im").src = "/images/anim/" + getBtnId + ".jpg";
+//       document.getElementById("im").style.border = "1px solid #000000";
+//     }
+//   });
+// });
+
