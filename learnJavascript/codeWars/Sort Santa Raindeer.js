@@ -95,25 +95,32 @@ let arr1 = [
   "Blitzen Claus",
 ];
 
-
 function sortLastNames(n) {
- 
- 
+  return n.sort((a, b) => {
+    const [, lastNameA] = a.split(" ");
+    const [, lastNameB] = b.split(" ");
+    return lastNameA.localeCompare(lastNameB);
+  });
 }
 
-console.log(sum(arr1));
+console.log(sortLastNames(arr1));
 
+let c = "a, b";
+let d = "d, a";
 
-
-let c = 'a, b';
-let d = 'd, a';
-
-let c1 =  c.split(' ');
-let d1 =  d.split(' ');
+let c1 = c.split(" ");
+let d1 = d.split(" ");
 
 let i = c1.concat(d1);
-console.log(i)
+console.log(i);
 
 // let [result] = c.concat(d);
 
 // console.log(result);
+
+let a = "bac";
+let b = "acb";
+
+console.log(a.localeCompare(b));
+
+console.log("Python".localeCompare("JavaScript"));
