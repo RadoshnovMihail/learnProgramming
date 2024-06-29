@@ -19,9 +19,12 @@
 // Таким образом, вы должны вернуть: "Стив выигрывает 2:1".
 
 // '2','3','4','5','6','7','8','9','T','J','Q','K','A'
-
-const cardsSteve = ["A", "7", "8"];
-const cardsJosh = ["K", "5", "9"];
+// ["K","2","4","5","4","3","2","K","A","T"],["Q","3","4","6","4","3","5","A","8","7"]]
+// expected 'Josh wins 3 to 4' to equal 'Josh wins 4 to 3'
+// const cardsSteve = ["A", "7", "8"];
+// const cardsJosh = ["K", "5", "9"];
+// const cardsSteve = ["K", "2", "4", "5", "4", "3", "2", "K", "A", "T"];
+// const cardsJosh = ["Q", "3", "4", "6", "4", "3", "5", "A", "8", "7"];
 
 function winner(deckSteve, deckJosh) {
   const cards = [
@@ -59,6 +62,58 @@ function winner(deckSteve, deckJosh) {
     return `Steve wins ${resSteve} to ${resJosh}`;
   } else if (resSteve < resJosh) {
     return `Josh wins ${resSteve} to ${resJosh}`;
+  } else {
+    return "Tie";
+  }
+}
+
+console.log(winner(cardsSteve, cardsJosh));
+
+
+
+
+const cardsSteve = ["K", "2", "4", "5", "4", "3", "2", "K", "A", "T"];
+const cardsJosh = ["Q", "3", "4", "6", "4", "3", "5", "A", "8", "7"];
+
+function winner(deckSteve, deckJosh) {
+  const cards = [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "T",
+    "J",
+    "Q",
+    "K",
+    "A",
+  ];
+
+  let resSteve = 0;
+  let resJosh = 0;
+  let minCardsLeft = Math.min(deckSteve.length, deckJosh.length);
+
+  for (let i = 0; i < minCardsLeft; i++) {
+    let cardSteve = deckSteve[i];
+    let cardJosh = deckJosh[i];
+
+    let rankCardSteve = cards.indexOf(cardSteve);
+    let rankCardJosh = cards.indexOf(cardJosh);
+
+    if (rankCardSteve > rankCardJosh) {
+      resSteve++;
+    } else if (rankCardSteve < rankCardJosh) {
+      resJosh++;
+    }
+  }
+
+  if (resSteve > resJosh) {
+    return `Steve wins ${resSteve} to ${resJosh}`;
+  } else if (resSteve < resJosh) {
+    return `Josh wins ${resJosh} to ${resSteve}`;
   } else {
     return "Tie";
   }
