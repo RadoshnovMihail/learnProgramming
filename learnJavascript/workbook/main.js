@@ -194,3 +194,43 @@
 //   });
 // });
 
+let dog = {
+    name: "Cherry",
+    legs: 4,
+    isAwesome: true
+}
+
+dog.age = 6;
+
+dog.bark = function(){
+    console.log("Gaw-Gaw! My name is " + this.name + "!");
+};
+
+dog.bark();
+
+
+let speak = function(){
+    console.log(this.sound + "! My name is " + this.name + "!");
+};
+
+let cat = {
+    sound: "Mur",
+    name: "Vareshka",
+    speak: speak
+};
+
+let pig = {
+    sound: "Xru",
+    name: "Charle",
+    speak: speak
+};
+
+let horse = {
+    sound: "Ee-go-go",
+    name: "Mery",
+    speak: speak
+};
+
+cat.speak();
+pig.speak();
+horse.speak();
