@@ -50,37 +50,40 @@ function bearDollars(arr) {
 
 console.log(bearDollars(arr));
 
-
-
-
 function calculateInvoice(jobs) {
-    const rates = {
-        'close friend': 25,
-        'friend': 50,
-        'acquaintance': 100
-    };
-    let totalInvoice = 0;
-    
-    for (const job of jobs) {
-        const hours = job[0];
-        const proximity = job[1].toLowerCase();
-        
-        if (proximity in rates) {
-            totalInvoice += hours * rates[proximity];
-        } else {
-            totalInvoice += hours * 125; // Default rate for other clients
-        }
+  const rates = {
+    "close friend": 25,
+    friend: 50,
+    acquaintance: 100,
+  };
+  let totalInvoice = 0;
+
+  for (const job of jobs) {
+    const hours = job[0];
+    console.log(hours);
+    const proximity = job[1].toLowerCase();
+    console.log(proximity);
+    if (proximity in rates) {
+      totalInvoice += hours * rates[proximity];
+    } else {
+      totalInvoice += hours * 125; // Default rate for other clients
     }
-    
-    return totalInvoice;
+  }
+
+  return totalInvoice;
 }
 
 // Example
-const jobs = [[10, 'Close Friend'], [3, 'Acquaintance'], [7, 'Lead from web'], [6, 'Friend'], [2, 'From advertisements']];
+const jobs = [
+  [10, "Close Friend"],
+  [3, "Acquaintance"],
+  [7, "Lead from web"],
+  [6, "Friend"],
+  [2, "From advertisements"],
+];
 const totalAmountInvoiced = calculateInvoice(jobs);
 
 console.log(totalAmountInvoiced); // Outputs: 1975
-
 
 // Конечно, вот объяснение каждой строчки кода из предложенного JavaScript кода:
 
@@ -107,3 +110,63 @@ console.log(totalAmountInvoiced); // Outputs: 1975
 // 11. `return totalInvoice;`: Эта строка возвращает общую сумму выставленного счета после завершения цикла и обработки всех заданий.
 
 // Данный код реализует логику расчета общей суммы выставленного счета для заданных заданий с учетом тарифов, зависящих от степени близости к клиенту.
+
+let machines = ["car", "bicycle", "motorcycle"]; // значение
+
+for (let machine of machines) {
+  console.log(machine);
+}
+
+for (let index in machines) {
+  // ключ
+  console.log(index);
+}
+
+const rates = {
+  "close friend": 25,
+  friend: 50,
+  acquaintance: 100,
+};
+
+// for (let key in rates){
+//   console.log(rates[key]);
+// }
+
+for (let item of rates) {
+  console.log(item[1]);
+}
+
+let arr1 = [
+  [10, "Close Friend"],
+  [3, "Acquaintance"],
+  [7, "Lead from web"],
+  [6, "Friend"],
+  [2, "From advertisements"],
+];
+
+let arr2 = [];
+
+function sumOfBear(arr) {
+  const rates = {
+    "close friend": 25,
+    friend: 50,
+    acquaintance: 100,
+  };
+  let result = 0;
+  
+
+  for (item of arr) {
+    let hours = item[0];
+    let status = item[1].toLowerCase();
+
+    if (status in rates) {
+      result += hours * rates[status];
+    } else {
+      result += hours * 125;
+    }
+  }
+  return result;
+}
+
+console.log(sumOfBear(arr1));
+console.log(sumOfBear(arr2))
