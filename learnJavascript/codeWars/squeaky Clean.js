@@ -12,12 +12,10 @@
 let originalArray = ["click1", "click2", null, "", "", "submitForm"];
 
 function squeakyClean(arr) {
-  let newArr = [...arr];
-  arr.forEach((elem) => {
-    if (elem === "") {
-      newArr.splice; 
-    }
-  });
+  const result = arr.filter(Boolean);
+  return result
 }
 
-console.log(arr(originalArray));
+console.log(squeakyClean(originalArray));
+
+
