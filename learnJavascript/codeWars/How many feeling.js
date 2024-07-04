@@ -149,24 +149,34 @@ function countFeelings(string, array) {
 
 console.log(countFeelings(str2, feeling2));
 
-
 function countFeelings(string, array) {
-  var result=array.filter(x=>x.split("").every(y=>string.includes(y))).length;
-  return result===1?"1 feeling.":result+" feelings.";
+  var result = array.filter((x) =>
+    x.split("").every((y) => string.includes(y))
+  ).length;
+  return result === 1 ? "1 feeling." : result + " feelings.";
 }
-
 
 function countFeelings(string, array) {
   let count = 0;
-  
+
   array.forEach((item) => {
-      if (item.split('').every((i) => {
-          return string.includes(i); 
-      })) {
-        count++;
-      }
+    if (
+      item.split("").every((i) => {
+        return string.includes(i);
+      })
+    ) {
+      count++;
+    }
   });
-  
-  
-  return count == 1 ? `${count} feeling.` : `${count} feelings.`; 
+
+  return count == 1 ? `${count} feeling.` : `${count} feelings.`;
 }
+
+let c = 42;
+let t = "faang";
+
+let r = new Set().add(1).add(2)
+
+// r.add(c).add(t);
+
+console.log();
