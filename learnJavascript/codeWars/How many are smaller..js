@@ -23,4 +23,3 @@ console.log(countSmallerToRight([5, 4, 3, 2, 1])); // Output: [4, 3, 2, 1, 0]
 console.log(countSmallerToRight([1, 2, 0])); // Output: [1, 1, 0]
 
 
-const smaller = nums => nums.map((x, i) => nums.slice(i).filter(y => x > y).length);
