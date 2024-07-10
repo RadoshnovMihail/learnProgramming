@@ -11,17 +11,17 @@
 // input:        "Sarah", "Sarah", "Charlie", "Charlie", "Charlie", "Mo", "Mo"
 // santa sorted: "Charlie", "Mo", "Sarah", "Charlie", "Mo", "Sarah", "Charlie"
 
-function santaSort(unsortedNames) {
-  let result = unsortedNames.slice().sort((a, b) => a.localeCompare(b));
-  let arr = [];
-  for (let i = 0; i < unsortedNames.length; i++) {
-    for (let j = 0; j < unsortedNames.length; j++) {
-      if()
-    }
-  }
+// function santaSort(unsortedNames) {
+//   let result = unsortedNames.slice().sort((a, b) => a.localeCompare(b));
+//   let arr = [];
+//   for (let i = 0; i < unsortedNames.length; i++) {
+//     for (let j = 0; j < unsortedNames.length; j++) {
+//       if()
+//     }
+//   }
 
-  return result;
-}
+//   return result;
+// }
 
 console.log(santaSort(["Sarah", "Charlie", "Mo"]));
 console.log(santaSort(["Sarah", "Sarah", "Charlie", "Charlie", "Charlie", "Mo", "Mo"]));
@@ -59,7 +59,7 @@ function santaSort(unsortedNames) {
   for (const name of unsortedNames) {
     nameCounts.set(name, (nameCounts.get(name) || 0) + 1);
   }
-
+console.log(nameCounts)
   // Массив для хранения отсортированного результата
   const result = [];
   let remaining = unsortedNames.length;
@@ -79,3 +79,5 @@ function santaSort(unsortedNames) {
 
   return result;
 }
+
+
