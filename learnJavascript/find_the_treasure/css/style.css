@@ -9,7 +9,7 @@ body {
 .treasure-map {
   width: 400px;
   height: 400px;
-  background-image: url("/find_the_treasure/images/map.jpg");
+  background-image: url("/images/map-1.jpg");
   background-size: cover;
   position: relative;
   cursor: pointer;
