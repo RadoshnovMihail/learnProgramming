@@ -137,52 +137,60 @@
 
 //Вписыаем внутри тегов строков, вызывающую обработчик события load:
 
-window.addEventListener("load", tim);
+// window.addEventListener("load", tim);
 //И так функция-обработчик получила название tim. Начнем разбираться, что она делает. Для определения даты и времени в javascript существует объект Date. Он содержит информацию о количестве милисекунд, прошедших с 1 января 1970 года.
-function tim() {
-  let den = new Date();
-  let mes = new Date();
-  let mon = "";
-  let arr = [
-    "января",
-    "февраля",
-    "марта",
-    "апреля",
-    "мая",
-    "июня",
-    "июля",
-    " августа",
-    "сентября",
-    "октября",
-    "ноября",
-    "декабря",
-  ];
-  for (let i = 0; i < 12; i++) {
-    if (mes.getMonth() == i) {
-      mon = arr[i];
-      break;
+// function tim() {
+//   let den = new Date();
+//   let mes = new Date();
+//   let mon = "";
+//   let arr = [
+//     "января",
+//     "февраля",
+//     "марта",
+//     "апреля",
+//     "мая",
+//     "июня",
+//     "июля",
+//     " августа",
+//     "сентября",
+//     "октября",
+//     "ноября",
+//     "декабря",
+//   ];
+//   for (let i = 0; i < 12; i++) {
+//     if (mes.getMonth() == i) {
+//       mon = arr[i];
+//       break;
+//     }
+//   }
+//   let god = new Date();
+//   document.getElementById("god").innerHTML =
+//     den.getDate() + " + mon + " + god.getFullYear() + " года";
+
+// let cha = new Date();
+// let min = new Date();
+// let sek = new Date();
+// let m = min.getMinutes();
+// let mi = '' + m;
+// if(mi.length == 1){
+//     m = '0' + m;
+// }
+// let s = sek.getSeconds();
+// let se='' + s;
+// if(se.length == 1){
+//     s = '0' + s;
+// }
+// document.getElementById('min').innerHTML = cha.getHours() + ':' + m + ':' + s;
+// window.setTimeout(tim, 1000);
+// }
+
+window.addEventListener("load", () => {
+  document.getElementById("con").addEventListener("click", () => {
+    if (
+      window.confirm("Вы действительно хотите покинуть эту страницу?") == true
+    ) {
+      window.location = "https://www.youtube.com/";
     }
-  }
-  let god = new Date();
-  document.getElementById("god").innerHTML =
-    den.getDate() + " + mon + " + god.getFullYear() + " года";
-
-let cha = new Date();
-let min = new Date();
-let sek = new Date();
-let m = min.getMinutes();
-let mi = '' + m;
-if(mi.length == 1){
-    m = '0' + m;
-}
-let s = sek.getSeconds();
-let se='' + s;
-if(se.length == 1){
-    s = '0' + s;
-}
-document.getElementById('min').innerHTML = cha.getHours() + ':' + m + ':' + s;
-window.setTimeout(tim, 1000);
-}
-
-
-
+    return false;
+  });
+});
