@@ -13,4 +13,5 @@ function flo() {
     document.getElementById("flo").style.width = "200px";
     direction = 1;
   }
+  return false;
 }

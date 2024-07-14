@@ -184,13 +184,49 @@
 // window.setTimeout(tim, 1000);
 // }
 
+// window.addEventListener("load", () => {
+//   document.getElementById("con").addEventListener("click", () => {
+//     if (
+//       window.confirm("Вы действительно хотите покинуть эту страницу?") == true
+//     ) {
+//       window.location = "https://www.youtube.com/";
+//     }
+//     return false;
+//   });
+// });
+
 window.addEventListener("load", () => {
-  document.getElementById("con").addEventListener("click", () => {
-    if (
-      window.confirm("Вы действительно хотите покинуть эту страницу?") == true
-    ) {
-      window.location = "https://www.youtube.com/";
-    }
-    return false;
-  });
+  document.getElementById("flo").addEventListener("click", tra);
 });
+
+let i = 1;
+
+function tra() {
+  if (i == 1) {
+    document.getElementById("flo").style.transition = "width 1s";
+    document.getElementById("flo").style.width = "500px";
+    i = 2;
+  } else {
+    document.getElementById("flo").style.transition = "width 1s";
+    document.getElementById("flo").style.width = "200px";
+    i = 1;
+  }
+  return false;
+}
+// Для чего она? Помните – адрес ссылки у нас выглядит так: href="#"? 
+// В наших примерах аналогичная запись попадется еще не раз. Такую «конструкцию» применяют, когда надо показать посетителю сайта, что перед ним ссылка
+// и ее можно нажать. Только нажатие приводит не к переходу на другую страницу, а к запуску программы на JavaScript (что и требуется в нашем случае). При
+// клике на такой ссылке страница не станет перезагружаться. Но зато в конце адресной строки браузера появится лишний символ #, что исказит реальный адрес, 
+// а сама страница прокрутится вверх. Чтобы избавится от этих нежелательных
+// эффектов, в конце функции, обрабатывающей клик на такой ссылке, необходимо добавить строку return false;
+
+
+window.addEventListener('load', () => {
+  document.getElementById('pic').addEventListener('click', (event) => {
+    if(event.target.tagName == "INPUT"){
+      let a = event.target.id;
+      document.getElementById('im').src = "/images/" + a + ".jpg";
+      document.getElementById('im').style.border = "1px solid #000000"
+    }
+  })
+})
