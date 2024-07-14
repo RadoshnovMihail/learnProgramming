@@ -195,38 +195,76 @@
 //   });
 // });
 
-window.addEventListener("load", () => {
-  document.getElementById("flo").addEventListener("click", tra);
-});
+// window.addEventListener("load", () => {
+//   document.getElementById("flo").addEventListener("click", tra);
+// });
 
-let i = 1;
+// let i = 1;
 
-function tra() {
-  if (i == 1) {
-    document.getElementById("flo").style.transition = "width 1s";
-    document.getElementById("flo").style.width = "500px";
-    i = 2;
-  } else {
-    document.getElementById("flo").style.transition = "width 1s";
-    document.getElementById("flo").style.width = "200px";
-    i = 1;
-  }
-  return false;
-}
-// Для чего она? Помните – адрес ссылки у нас выглядит так: href="#"? 
+// function tra() {
+//   if (i == 1) {
+//     document.getElementById("flo").style.transition = "width 1s";
+//     document.getElementById("flo").style.width = "500px";
+//     i = 2;
+//   } else {
+//     document.getElementById("flo").style.transition = "width 1s";
+//     document.getElementById("flo").style.width = "200px";
+//     i = 1;
+//   }
+//   return false;
+// }
+// Для чего она? Помните – адрес ссылки у нас выглядит так: href="#"?
 // В наших примерах аналогичная запись попадется еще не раз. Такую «конструкцию» применяют, когда надо показать посетителю сайта, что перед ним ссылка
 // и ее можно нажать. Только нажатие приводит не к переходу на другую страницу, а к запуску программы на JavaScript (что и требуется в нашем случае). При
-// клике на такой ссылке страница не станет перезагружаться. Но зато в конце адресной строки браузера появится лишний символ #, что исказит реальный адрес, 
+// клике на такой ссылке страница не станет перезагружаться. Но зато в конце адресной строки браузера появится лишний символ #, что исказит реальный адрес,
 // а сама страница прокрутится вверх. Чтобы избавится от этих нежелательных
 // эффектов, в конце функции, обрабатывающей клик на такой ссылке, необходимо добавить строку return false;
 
+// window.addEventListener('load', () => {
+//   document.getElementById('pic').addEventListener('click', (event) => {
+//     if(event.target.tagName == "INPUT"){
+//       let a = event.target.id;
+//       document.getElementById('im').src = "/images/" + a + ".jpg";
+//       document.getElementById('im').style.border = "1px solid #000000"
+//     }
+//   })
+// })
 
-window.addEventListener('load', () => {
-  document.getElementById('pic').addEventListener('click', (event) => {
-    if(event.target.tagName == "INPUT"){
-      let a = event.target.id;
-      document.getElementById('im').src = "/images/" + a + ".jpg";
-      document.getElementById('im').style.border = "1px solid #000000"
+window.addEventListener("click", frog);
+window.addEventListener("load", () => {
+  document.getElementById("fr").addEventListener("click", coor);
+});
+
+let h = 0;
+let v = 0;
+let i = 1;
+let c = 0;
+
+function coor(event) {
+  if (i == 1) {
+    h = event.pageX;
+    v = event.pageY;
+
+    i = 2;
+    c = h;
+  }
+}
+
+function frog(event) {
+  if ((i = 2)) {
+    let nh = event.pageX;
+    let nv = event.pageY;
+
+    let ih = nh - h;
+    let iv = nv - v;
+    if (c < nh) {
+      document.getElementById("fr").src = "/images/frog_a.png";
+    } else {
+      document.getElementById("fr").src = "/images/frog_b.png";
     }
-  })
-})
+    document.getElementById("fr").style.left = ih + "px";
+    document.getElementById("fr").style.top = iv + "px";
+
+    c = nh;
+  }
+}
