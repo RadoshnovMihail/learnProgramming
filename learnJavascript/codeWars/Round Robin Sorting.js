@@ -35,10 +35,11 @@ function santaSort(unsortedNames) {
       return 1;
     }
   });
-  return result;
+  return result.join(', ');
 }
 
 console.log(santaSort(["Sarah", "Charlie", "Mo"]));
+console.log(santaSort(["Sarah", "Sarah", "Charlie", "Charlie", "Charlie", "Mo", "Mo"]));
 
 const santaSort = (unsortedNames) =>
   unsortedNames.slice().sort((a, b) => a.localeCompare(b));
