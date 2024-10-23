@@ -4,6 +4,25 @@
 }
 .wrapper{
     width: 1200px;
+    margin: 0 auto;
+}
+
+.box{
+    border: 2px solid #000;
+    background-color: #ccc;
+    height: 500px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.text{
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    width: 400px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .title{
@@ -13,19 +32,33 @@
 .title-1{
     font-size: 50px;
     margin: 25px 0 50px;
+    top: 0;
+    padding: 20px 0;
+    background-color: #fff;
+    z-index: 1;
+    position: relative;
 }
 
 .title-1:hover{
 color: blue;
 }
 
-.title-1::before{
-    content: 'dffd';
+.title-1::before,
+.title-1::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
 
 }
 
 .title-1::after{
-    content: 'cvvc';
+    content: '';
+    right:0;
+    left: auto;
 }
 
 .text-1{
@@ -57,3 +90,11 @@ color: blue;
     text-align: right;
 }
 
+.arrow{
+    cursor:pointer;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
