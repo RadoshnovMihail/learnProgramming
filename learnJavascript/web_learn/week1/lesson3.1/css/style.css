@@ -1,0 +1,18 @@
+*{
+    box-sizing:boreder-box;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 4px solid #000;
+    text-align: center;
+    font-size: 50px;
+    line-height: 200px;
+    background-color: green;
+}
