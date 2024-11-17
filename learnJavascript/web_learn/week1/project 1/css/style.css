@@ -44,6 +44,7 @@
 .swiper-slide{
     text-align: center;
     color: rgb(255, 255, 255);
+    height: 180px;
 }
 
 .title{
@@ -58,18 +59,14 @@
     line-height: 24px;
 }
 
-.swiper-pagination-bullet + .swiper-pagination-bullet{
-    margin-left: 15px;
-}
-
 .swiper-pagination-bullet{
-    font-size: 0;
-    width: 25px;
-    height: 25px;
-    background:rgb(122, 61, 28);
-    border: 2px solid #FDD486;
+  background-color: rgb(122, 61, 28);
+  width: 25px;
+  height: 25px;
+  border: 2px solid rgb(253, 212, 134);
 }
 
-.swiper{
-    margin-bottom:50px;
+swiper-box{
+  height: 225px;
 }
+
