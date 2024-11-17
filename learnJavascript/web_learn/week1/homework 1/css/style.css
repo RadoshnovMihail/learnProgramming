@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+    .wrapper{
+        max-width: 1200vh;
+        margin: 0 auto;
+    }
+
+    .container{
+        background-image:url('../images/bg.jpeg');
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .header{
+        padding-left: 35px;
+        display: flex;
+    }
+
+     .item + .item{
+        margin-left: 25px;
+     }
+
+     .header ul{
+        margin-left: 34px;
+        display: flex;
+        margin-bottom: 80px;
+     }
+
+     .menu{
+        margin-top: 83px;
+     }
+
+     .logo{
+        margin-top: 46px;
+     }
+
+     .item{
+        color:rgb(255, 255, 255);
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 500;
+     }
+
+     .title{
+        margin-bottom: 15px;
+        font-size: 120px;
+        line-height: 141px;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+     }
+
+     .text{
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        color: rgb(255, 255, 255);
+     }
+
+     .swiper mySwiper{
+        height: 87px;
+     }
+
+     .swiper-pagination-bullet{
+        width: 20px;
+        height: 20px;
+       background:rgb(255, 255, 255);
+     }
