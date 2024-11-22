@@ -1,0 +1,79 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-image: url("../images/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1217px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-left: 16px;
+  padding-top: 46px;
+  display: flex;
+  margin-bottom: 240px;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu li + li {
+  margin-left: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgb(255, 255, 255);
+}
+
+.menu {
+  margin-left: 34px;
+  padding-top: 34px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 141px;
+  color: rgb(255, 255, 255);
+}
+
+.text {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 46px;
+}
+
+.slick-dots {
+  display: flex;
+  list-style-type: none;
+}
+
+.slick-dots button {
+  font-size: 0;
+  width: 25px;
+  height: 25px;
+  background: rgb(255, 255, 255);
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+}
+
+.slick-dots li + li{
+    margin-left: 20px;
+}
