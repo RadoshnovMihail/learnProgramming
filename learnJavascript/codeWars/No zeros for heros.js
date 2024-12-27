@@ -5,8 +5,9 @@
 
 
 function b (num){
-    let a = num.toString().split('').reverse().map(el => Number(el));
-    let ind = a.findIndex(el => el != 0);
+    let a = num.toString().split('');
+    let newArr = a.reverse().map(el => Number(el));
+    let ind = newArr.findIndex(el => el != 0)
     let res = a.slice(ind).reverse().join('');
 return Number(res);
 }
