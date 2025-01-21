@@ -256,6 +256,64 @@ background-image: url('../images/speaker-icon.svg');
    margin-bottom: 67px;
 }
 
-.magic__text{
+.magic__text p{
   margin-bottom: 25px;
+}
+
+.portfolio{
+  padding: 140px 0 165px;
+}
+
+.portfolio__top{
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 100px;
+}
+.portfolio__content{
+  column-count: 4;
+  column-gap: 22px;
+}
+
+.portfolio__item{
+  margin-bottom:22px;
+}
+
+.portfolio__item img{
+  width: 100%;
+}
+
+.portfolio__add{
+  display: block;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1.2px;
+  color:rgb(36, 33, 33);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 42px 15px 41px;
+  background: rgb(246, 248, 250);
+  margin-bottom: 130px;
+}
+
+.blockquote{
+  max-width: 650px;
+  margin: 0 auto 148px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 36px;
+  font-family: "Merriweather", serif;
+  color: rgb(36, 33, 33);
+}
+
+.blockquote__author{
+  padding-top: 51px;
+  display: block;
+  color: rgb(158, 158, 158);
+  font-size: 14px;
+  line-height: 32px;
 }
