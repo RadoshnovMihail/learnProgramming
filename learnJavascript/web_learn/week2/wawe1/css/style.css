@@ -8,3 +8,9 @@ font-family: "Raleway", serif; */
 body{
 min-height: 100vh;
 }
+
+.container{
+    max-width: 1229px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
