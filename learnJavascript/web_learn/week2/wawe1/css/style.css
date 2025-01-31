@@ -3,6 +3,7 @@
 *::before {
   box-sizing: border-box;
 }
+
 /* font-family: "Roboto Condensed", serif;
 font-family: "Raleway", serif; */
 body {
@@ -12,7 +13,8 @@ body {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.6px;
-  color: rgb(36, 33, 33)
+  color: rgb(36, 33, 33);
+  overflow: auto;
 }
 
 a{
@@ -84,4 +86,7 @@ a{
   font-size: 24px;
   line-height: 28px;
   color: rgb(0, 0, 0);
+}
+
+.header__icon{
 }
