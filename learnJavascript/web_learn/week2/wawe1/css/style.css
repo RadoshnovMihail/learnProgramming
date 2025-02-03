@@ -95,3 +95,18 @@ a {
 .header__icon{
   margin-bottom: 92px;
 }
+
+.canaries__title{
+  text-align: center;
+}
+
+.title{
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  color:rgb(1, 53, 62);
+}
+
+.canaries__about-canaries{
+  
+}
