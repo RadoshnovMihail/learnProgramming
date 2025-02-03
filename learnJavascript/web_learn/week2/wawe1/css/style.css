@@ -6,6 +6,7 @@
 
 /* font-family: "Roboto Condensed", serif;
 font-family: "Raleway", serif; */
+html,
 body {
   min-height: 100vh;
   font-family: "Roboto Condensed", serif;
@@ -14,11 +15,10 @@ body {
   line-height: 18px;
   letter-spacing: 0.6px;
   color: rgb(36, 33, 33);
-  overflow: auto;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -32,7 +32,7 @@ a{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  min-height: inherit;
+  min-height: 100vh;
 }
 
 .header__top-inner {
@@ -41,8 +41,8 @@ a{
   align-items: center;
 }
 
-.menu{
-    margin-left: 185px;
+.menu {
+  margin-left: 185px;
 }
 
 .menu__list-item + .menu__list-item {
@@ -63,30 +63,35 @@ a{
   transition: 0.5s;
 }
 
-.menu__list-link:hover{
-    border-bottom:1px solid rgb(0, 178, 160);
+.menu__list-link:hover {
+  border-bottom: 1px solid rgb(0, 178, 160);
 }
 
-.header__content-inner{
+.header__content-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 85px);
 }
 
-.header__title{
+.header__title {
   font-family: "Raleway", serif;
   font-weight: 700;
   font-size: 200px;
   line-height: 235px;
   color: rgb(13, 48, 44);
+  margin-top: auto;
 }
 
-.header__subtitle{
+.header__subtitle {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   color: rgb(0, 0, 0);
+  margin-bottom: auto;
 }
 
 .header__icon{
+  margin-bottom: 92px;
 }
