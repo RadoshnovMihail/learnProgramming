@@ -33,6 +33,7 @@ a {
   background-size: cover;
   background-position: center center;
   min-height: 100vh;
+  margin-bottom: 189px;
 }
 
 .header__top-inner {
@@ -96,8 +97,26 @@ a {
   margin-bottom: 92px;
 }
 
+.canaries{
+  background-color: FFFFFF;
+}
+
+.canaries__title-inner{
+display: flex;
+justify-content: center;
+position: relative;
+}
+
 .canaries__title{
-  text-align: center;
+  margin-bottom: 100px;
+}
+
+.canaries__img{
+  position: absolute;
+  width: 48px;
+  height: 85px;
+  right: 188px;
+  top: 19px
 }
 
 .title{
@@ -108,5 +127,10 @@ a {
 }
 
 .canaries__about-canaries{
-  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 30px;
+  column-gap: 120px;
 }
+
