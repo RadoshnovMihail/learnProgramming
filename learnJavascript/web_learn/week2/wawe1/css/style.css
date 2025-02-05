@@ -38,7 +38,7 @@ a {
 
 .header__top-inner {
   display: flex;
-  justify-content: flex-startstart;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -93,44 +93,94 @@ a {
   margin-bottom: auto;
 }
 
-.header__icon{
+.header__icon {
   margin-bottom: 92px;
 }
 
-.canaries{
+.canaries {
   background-color: FFFFFF;
+  margin-bottom: 200px;
 }
 
-.canaries__title-inner{
-display: flex;
-justify-content: center;
-position: relative;
+.canaries__title-inner {
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
-.canaries__title{
+.canaries__title {
   margin-bottom: 100px;
 }
 
-.canaries__img{
+.canaries__img {
   position: absolute;
   width: 48px;
   height: 85px;
   right: 188px;
-  top: 19px
+  top: 19px;
 }
 
-.title{
+.title {
   font-weight: 600;
   font-size: 48px;
   line-height: 56px;
-  color:rgb(1, 53, 62);
+  color: rgb(1, 53, 62);
 }
 
-.canaries__about-canaries{
+.canaries__about-canaries {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 480px);
+  grid-template-rows: repeat(4, 87px);
   row-gap: 30px;
   column-gap: 120px;
 }
 
+.about__school-inner {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 101px;
+}
+
+.about__school-img {
+  position: absolute;
+  width: 48px;
+  height: 55px;
+  right: 307px;
+  top: 19px;
+}
+
+.tex + .tex {
+  margin-left: 74px;
+}
+
+.school__info {
+  display: flex;
+  justify-content: center;
+}
+
+.school-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.tex{
+  text-align: center;
+}
+
+.live__school-title:before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url('../images/about-school/group.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 55px;
+  height: 50px;
+  left: 66px;
+  top: -19px;
+}
