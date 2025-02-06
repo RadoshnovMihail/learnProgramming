@@ -31,13 +31,13 @@ body {
 
 .header__menu-inner {
   display: flex;
-  align-items: center;
-  /* margin-bottom: 261px; */
+  /* align-items: center; */
+  padding-top: 35px;
 }
 
 .header__menu {
-  /* padding-top: 52px; */
   margin-left: 185px;
+  align-self: center;
 }
 
 .header__menu-item + .header__menu-item {
@@ -87,5 +87,40 @@ body {
 
 .header__info-logo {
   padding-bottom: 92px;
-  margin: 0 auto;
+  margin: auto;
+}
+
+.about__title-inner{
+  display: flex;
+  justify-content: center;
+  padding-top: 174px;
+}
+
+.title{
+  font-family: "Raleway", serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  color: rgb(1, 53, 62);
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+.title__img{
+  align-self: flex-end;
+}
+
+.about__text-inner{
+  padding-top: 96px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 480px);
+  grid-template-rows: repeat(4, 87px);
+  gap: 30px 120px;
+  margin-bottom: 200px;
+}
+
+.school__title-inner{
+  display: flex;
+  justify-content: center;
 }
