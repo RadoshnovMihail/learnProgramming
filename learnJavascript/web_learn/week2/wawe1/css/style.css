@@ -17,63 +17,55 @@ body {
   color: rgb(36, 33, 33);
 }
 
-a {
-  text-decoration: none;
-}
-
 .container {
-  max-width: 1229px;
-  padding: 0 10px;
+  max-width: 1210px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .header {
   background-image: url("../images/header-bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  min-height: 100vh;
-  margin-bottom: 189px;
+  background-position: center;
 }
 
-.header__top-inner {
+.header__menu-inner {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  margin-bottom: 261px;
 }
 
-.menu {
+.header__menu {
+  /* padding-top: 52px; */
   margin-left: 185px;
 }
 
-.menu__list-item + .menu__list-item {
-  margin-left: 39px;
+.header__menu-item + .header__menu-item {
+  margin-left: 43px;
 }
 
-.menu__list {
+.header__menu-list {
   display: flex;
 }
 
-.menu__list-link {
-  padding: 0 3px 5px;
+.header__menu-link {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  transition: 0.5s;
+  padding: 0 1px 5px;
+  transition: all 1s;
 }
 
-.menu__list-link:hover {
+.header__menu-link:hover {
   border-bottom: 1px solid rgb(0, 178, 160);
 }
 
-.header__content-inner {
+.header__info-inner {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  min-height: calc(100vh - 85px);
+  justify-content: center;
 }
 
 .header__title {
@@ -82,7 +74,7 @@ a {
   font-size: 200px;
   line-height: 235px;
   color: rgb(13, 48, 44);
-  margin-top: auto;
+  text-transform: uppercase;
 }
 
 .header__subtitle {
@@ -90,97 +82,9 @@ a {
   font-size: 24px;
   line-height: 28px;
   color: rgb(0, 0, 0);
-  margin-bottom: auto;
+  margin-bottom: 304px;
 }
 
-.header__icon {
-  margin-bottom: 92px;
-}
-
-.canaries {
-  background-color: FFFFFF;
-  margin-bottom: 200px;
-}
-
-.canaries__title-inner {
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-
-.canaries__title {
-  margin-bottom: 100px;
-}
-
-.canaries__img {
-  position: absolute;
-  width: 48px;
-  height: 85px;
-  right: 188px;
-  top: 19px;
-}
-
-.title {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 56px;
-  color: rgb(1, 53, 62);
-}
-
-.canaries__about-canaries {
-  display: grid;
-  grid-template-columns: repeat(2, 480px);
-  grid-template-rows: repeat(4, 87px);
-  row-gap: 30px;
-  column-gap: 120px;
-}
-
-.about__school-inner {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 101px;
-}
-
-.about__school-img {
-  position: absolute;
-  width: 48px;
-  height: 55px;
-  right: 307px;
-  top: 19px;
-}
-
-.tex + .tex {
-  margin-left: 74px;
-}
-
-.school__info {
-  display: flex;
-  justify-content: center;
-}
-
-.school-title {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 18px;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.tex{
-  text-align: center;
-}
-
-.live__school-title:before {
-  position: absolute;
-  content: "";
-  display: block;
-  background-image: url('../images/about-school/group.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 55px;
-  height: 50px;
-  left: 66px;
-  top: -19px;
+.header__info-logo {
+  padding-bottom: 92px;
 }
