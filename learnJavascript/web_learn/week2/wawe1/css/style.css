@@ -6,7 +6,6 @@
 
 /* font-family: "Roboto Condensed", serif;
 font-family: "Raleway", serif; */
-html,
 body {
   min-height: 100vh;
   font-family: "Roboto Condensed", serif;
@@ -33,7 +32,7 @@ body {
 .header__menu-inner {
   display: flex;
   align-items: center;
-  margin-bottom: 261px;
+  /* margin-bottom: 261px; */
 }
 
 .header__menu {
@@ -65,7 +64,7 @@ body {
 .header__info-inner {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  text-align: center;
 }
 
 .header__title {
@@ -75,6 +74,7 @@ body {
   line-height: 235px;
   color: rgb(13, 48, 44);
   text-transform: uppercase;
+  padding-top: 261px;
 }
 
 .header__subtitle {
@@ -87,4 +87,5 @@ body {
 
 .header__info-logo {
   padding-bottom: 92px;
+  margin: 0 auto;
 }
