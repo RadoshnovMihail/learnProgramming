@@ -123,4 +123,85 @@ body {
 .school__title-inner{
   display: flex;
   justify-content: center;
+  margin-bottom: 101px;
 }
+
+.school__learn-inner{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 102px;
+}
+
+.school__learn-group{
+  margin-left: 74px;
+}
+
+.school__title-position{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.school__subtitle{
+  align-self: center;
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+  color: rgb(36, 33, 33);
+}
+
+.school__text{
+  width: 358px;
+  height: 68px;
+}
+
+.statistics{
+  display: flex;
+  flex-direction: column;
+}
+
+.first__travel{
+  display: flex;
+}
+
+.percent{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+  color: rgb(36, 33, 33);
+  margin-left: 10px;
+  align-self: center;
+}
+
+.vector-1{
+  width: 200px;
+  height: 15px;
+}
+.vector-2{
+  width: 247px;
+  height: 15px;
+}
+.vector-3{
+  width: 293px;
+  height: 15px;
+}
+
+.school_information{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.school__information-text{
+  margin-left: 254px;
+}
+
+.school__information-text-item{
+  width: 600px;
+  height: 53px;
+}
+
+.school__information-top{
+  margin-bottom: 30px;
+}
+
