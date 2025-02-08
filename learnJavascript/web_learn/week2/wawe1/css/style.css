@@ -90,13 +90,13 @@ body {
   margin: auto;
 }
 
-.about__title-inner{
+.about__title-inner {
   display: flex;
   justify-content: center;
   padding-top: 174px;
 }
 
-.title{
+.title {
   font-family: "Raleway", serif;
   font-weight: 600;
   font-size: 48px;
@@ -106,11 +106,11 @@ body {
   padding-bottom: 15px;
 }
 
-.title__img{
+.title__img {
   align-self: flex-end;
 }
 
-.about__text-inner{
+.about__text-inner {
   padding-top: 96px;
   display: grid;
   justify-content: center;
@@ -120,88 +120,91 @@ body {
   margin-bottom: 200px;
 }
 
-.school__title-inner{
+.school__title-inner {
   display: flex;
   justify-content: center;
   margin-bottom: 101px;
 }
 
-.school__learn-inner{
+.school__learn-inner {
   display: flex;
   justify-content: center;
   margin-bottom: 102px;
 }
 
-.school__learn-group{
+.school__learn-group {
   margin-left: 74px;
 }
 
-.school__title-position{
+.school__title-position {
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
 }
 
-.school__subtitle{
+.school__subtitle {
   align-self: center;
   margin-left: 10px;
   font-weight: 400;
   font-size: 24px;
-  line-height: 18px;
+  line-height: 28px;
   color: rgb(36, 33, 33);
 }
 
-.school__text{
+.school__text {
   width: 358px;
   height: 68px;
 }
 
-.statistics{
+.statistics-inner{
+  position: relative;
+}
+
+.statistics {
   display: flex;
   flex-direction: column;
+  flex: none;
+  margin-left: 16px;
 }
 
-.first__travel{
+.first__travel {
   display: flex;
 }
 
-.percent{
+.percent {
   font-weight: 400;
   font-size: 24px;
   line-height: 18px;
   color: rgb(36, 33, 33);
   margin-left: 10px;
-  align-self: center;
 }
 
-.vector-1{
+.vector-1 {
   width: 200px;
   height: 15px;
 }
-.vector-2{
+.vector-2 {
   width: 247px;
   height: 15px;
 }
-.vector-3{
+.vector-3 {
   width: 293px;
   height: 15px;
 }
 
-.school_information{
+.school_information {
   display: flex;
-  justify-content: flex-end;
 }
 
-.school__information-text{
-  margin-left: 254px;
+.school__information-text {
+  margin-left: 262px;
 }
 
-.school__information-text-item{
+.school__information-text-item {
   width: 600px;
   height: 53px;
 }
 
-.school__information-top{
+.school__information-top {
   margin-bottom: 30px;
 }
-
