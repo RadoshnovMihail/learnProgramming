@@ -120,6 +120,10 @@ body {
   margin-bottom: 200px;
 }
 
+.school{
+  padding-bottom: 200px;
+}
+
 .school__title-inner {
   display: flex;
   justify-content: center;
@@ -207,4 +211,36 @@ body {
 
 .school__information-top {
   margin-bottom: 30px;
+}
+
+.coaches__inner{
+  display: flex;
+  min-height: 100vh;
+}
+
+.coaches__title{
+  white-space: nowrap;
+}
+
+.coaches__title-inner{
+  display: flex;
+  width: 552px;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.coaches__img-dash{
+  margin-bottom: 41px;
+  margin-top: 20px;
+}
+
+.coaches__images{
+  max-width: 960px;
+  max-height: 850px;
+  margin-left: 41px;
+}
+
+.coaches__text {
+  margin-bottom: 30px;
+  width: 507px;
 }
