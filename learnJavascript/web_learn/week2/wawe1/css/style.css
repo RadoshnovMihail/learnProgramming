@@ -120,7 +120,7 @@ body {
   margin-bottom: 200px;
 }
 
-.school{
+.school {
   padding-bottom: 200px;
 }
 
@@ -160,7 +160,7 @@ body {
   height: 68px;
 }
 
-.statistics-inner{
+.statistics-inner {
   position: relative;
 }
 
@@ -213,28 +213,28 @@ body {
   margin-bottom: 30px;
 }
 
-.coaches__inner{
+.coaches__inner {
   display: flex;
   min-height: 100vh;
 }
 
-.coaches__title{
+.coaches__title {
   white-space: nowrap;
 }
 
-.coaches__title-inner{
+.coaches__title-inner {
   display: flex;
   width: 552px;
   text-align: center;
   padding-top: 200px;
 }
 
-.coaches__img-dash{
+.coaches__img-dash {
   margin-bottom: 41px;
   margin-top: 20px;
 }
 
-.coaches__images{
+.coaches__images {
   max-width: 960px;
   max-height: 850px;
   margin-left: 41px;
@@ -245,8 +245,37 @@ body {
   width: 507px;
 }
 
-.gallery__title-inner{
+.gallery__title-inner {
   display: flex;
   justify-content: center;
-  margin-bottom: 21px;
+  margin-bottom: 98px;
+}
+
+.gallery__btn + .gallery__btn {
+  margin-left: 20px;
+}
+
+.gallery__menu {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.gallery__btn {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+  color: rgb(36, 33, 33);
+  margin-bottom: 50px;
+}
+
+.gallery__content-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__content-item {
+  display: grid;
+  grid-template-columns: repeat(3, auto) ;
+  grid-template-rows: repeat(2, auto) ;
 }
