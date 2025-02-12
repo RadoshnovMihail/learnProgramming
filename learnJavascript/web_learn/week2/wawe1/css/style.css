@@ -244,3 +244,9 @@ body {
   margin-bottom: 30px;
   width: 507px;
 }
+
+.gallery__title-inner{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 21px;
+}
