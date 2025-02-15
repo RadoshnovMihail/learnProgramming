@@ -1,5 +1,3 @@
 $(function(){
-    $('.slider').slick({
-    
-    });
+   var mixer = mixitup('.gallery__content-inner');
     });

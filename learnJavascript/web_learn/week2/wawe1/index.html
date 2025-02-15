@@ -12,6 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
@@ -266,42 +268,147 @@
         </div>
         <div class="gallery__menu-inner">
           <div class="gallery__menu">
-            <button class="gallery__btn">ВСЕ</button>
-            <button class="gallery__btn">ТУРИСТЫ</button>
-            <button class="gallery__btn">ПРИРОДА</button>
-            <button class="gallery__btn">ПРОФИ</button>
+            <button type="button" class="gallery__btn" data-filter="all">
+              ВСЕ
+            </button>
+            <button
+              type="button"
+              class="gallery__btn"
+              data-filter=".category-a"
+            >
+              ТУРИСТЫ
+            </button>
+            <button
+              type="button"
+              class="gallery__btn"
+              data-filter=".category-b"
+            >
+              ПРИРОДА
+            </button>
+            <button
+              type="button"
+              class="gallery__btn"
+              data-filter=".category-c"
+            >
+              ПРОФИ
+            </button>
           </div>
           <div class="gallery__content">
             <div class="gallery__content-inner">
-              <div class="gallery__content-item">
-                <img src="/images/gallery/image-1.jpeg" alt="" class="gallery__item-img gallery__image-1" />
+              <div class="gallery__content-item mix category-a">
+                <img
+                  src="/images/gallery/image-1.jpeg"
+                  alt=""
+                  class="gallery__item-img gallery__image-1"
+                />
               </div>
-              <div class="gallery__content-item">
-                <img src="/images/gallery/image-2.jpeg" alt="" class="gallery__item-img gallery__image-2"/>
+              <div class="gallery__content-item mix category-a">
+                <img
+                  src="/images/gallery/image-2.jpeg"
+                  alt=""
+                  class="gallery__item-img gallery__image-2"
+                />
               </div>
-              <div class="gallery__content-item">
-                <img src="/images/gallery/image-3.jpeg" alt="" class="gallery__item-img gallery__image-3" />
+              <div class="gallery__content-item mix category-b">
+                <img
+                  src="/images/gallery/image-3.jpeg"
+                  alt=""
+                  class="gallery__item-img gallery__image-3"
+                />
               </div>
-              <div class="gallery__content-item">
-                <img src="/images/gallery/image-4.jpeg" alt="" class="gallery__item-img gallery__image-4" />
+              <div class="gallery__content-item mix category-b">
+                <img
+                  src="/images/gallery/image-4.jpeg"
+                  alt=""
+                  class="gallery__item-img gallery__image-4"
+                />
               </div>
-              <div class="gallery__content-item">
-                <img src="/images/gallery/image-5.jpeg" alt="" class="gallery__item-img gallery__image-5" />
+              <div class="gallery__content-item mix category-c">
+                <img
+                  src="/images/gallery/image-5.jpeg"
+                  alt=""
+                  class="gallery__item-img gallery__image-5"
+                />
               </div>
-              <div class="gallery__content-item">
-                <img src="/images/gallery/image-6.jpeg" alt="" class="gallery__item-img gallery__image-6" />
+              <div class="gallery__content-item mix category-c">
+                <img
+                  src="/images/gallery/image-6.jpeg"
+                  alt=""
+                  class="gallery__item-img gallery__image-6"
+                />
               </div>
             </div>
-            <button class="gallery__btn-add">ПОКАЗАТЬ ЕЩЕ</button>
+          </div>
+          <button class="gallery__btn-add" type="button">ПОКАЗАТЬ ЕЩЕ</button>
+        </div>
+      </div>
+      <div class="gallery__blockquote">
+        <div class="container">
+          <blockquote class="blockquote">
+            «Если сомневаешься – иди катайся.»
+            <span class="blockquote__author">
+              Нэт Янг, первый Чемпион Мира по сёрфингу
+            </span>
+          </blockquote>
+        </div>
+      </div>
+      <div class="gallery__video">
+        <div class="container">
+          <div class="gallery__video-inner">
+            <a
+            data-fancybox
+              class="video"
+              href="https://www.youtube.com/watch?v=ma67yOdMQfs"
+            >
+              <img
+                class="gallery__play"
+                src="/images/gallery/triangle.png"
+                alt=""
+              />
+            </a>
           </div>
         </div>
       </div>
-      <blockquote class="gallery__blockquote">
-        «Если сомневаешься – иди катайся.»
-        <span class="gallery__author">
-          Нэт Янг, первый Чемпион Мира по сёрфингу
-        </span>
-      </blockquote>
+      <div class="container">
+        <div class="gallery__info">
+          <div class="gallery__info-item">
+            <h5 class="gallery__info-title">450</h5>
+            <span class="gallery__info-text">туристов</span>
+          </div>
+          <div class="gallery__info-item">
+            <h5 class="gallery__info-title">2500</h5>
+            <span class="gallery__info-text">часов катания</span>
+          </div>
+          <div class="gallery__info-item">
+            <h5 class="gallery__info-title">10</h5>
+            <span class="gallery__info-text">проф. тренеров</span>
+          </div>
+          <div class="gallery__info-item">
+            <h5 class="gallery__info-title">365</h5>
+            <span class="gallery__info-text">дней в году</span>
+          </div>
+        </div>
+      </div>
     </section>
+<section class="blog">
+  <div class="blog__title">
+   <div class="container">
+    <div class="blog__title-inner">
+      <h2 class="title">БЛОГ</h2>
+      <img class="title__img" src="/images/_.jpeg" alt="" />
+    </div>
+   </div>
+  </div>
+  <div class="blog__gallery">
+    <div class="container">
+      <div class="blog__gallery-inner">
+      </div>
+    </div>
+  </div>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="/js/mixitup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
