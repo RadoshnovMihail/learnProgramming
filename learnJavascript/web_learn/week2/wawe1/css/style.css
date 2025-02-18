@@ -407,9 +407,17 @@ body {
   background-image: url('../images/blog/blog-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  max-height: 800px;
 }
 
+.blog__slider-item{
+  padding: 314px 0 259px 601px;
+}
+
+
+.blog__slider-title{
+  text-decoration: none;
+}
 
 .slider-title{
 font-weight: 400;
@@ -417,6 +425,7 @@ font-size: 48px;
 line-height: 56px;
 color: rgb(255, 255, 255);
 max-width: 579px;
+display: inline-block;
 }
 
 .blog_slider-text{
@@ -426,9 +435,10 @@ max-width: 579px;
   color: rgb(255, 255, 255);
 }
 
-.slick-dots{
-  display: flex;
-  /* padding:259px 0 77px; */
+.blog__slider-inner .slick-dots{
+ display: flex;
+ justify-content: center;
+ margin-bottom: 200px;
 }
 
 .slick-dots li + li{
@@ -436,8 +446,57 @@ max-width: 579px;
 }
 
 .slick-dots button{
+  width: 15px;
+  height: 15px;
   font-size: 0;
-   border: none;
-  color: rgb(255, 255, 255);
+  border: none;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
+  padding: 0;
+  margin-bottom: 77px;
+  
+}
+
+.slick-dots .slick-active button{
+  background-color: rgb(0, 178, 160);
+}
+
+.team__title-inner{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 212px;
+}
+
+.team__photo{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.team__photo-item + .team__photo-item{
+  margin-left: 105px;
+}
+
+.team__name{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: rgb(36, 33, 33);
+}
+
+.team__photo-item{
+  display: flex;
+  text-align: center;
+  flex-direction:  column;
+}
+
+.team__img{
+  margin-bottom: 25px;
+}
+
+.team__profession{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(36, 33, 33);
+  margin-bottom: 204px;
 }
