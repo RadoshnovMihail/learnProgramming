@@ -500,3 +500,143 @@ display: inline-block;
   color: rgb(36, 33, 33);
   margin-bottom: 204px;
 }
+
+.price{
+  background-color:#F8F8F8 ;
+}
+
+.price__title-inner{
+  display: flex;
+  justify-content: center;
+  padding: 200px 0 212px;
+}
+
+.price__items{
+  display: flex;
+  justify-content: space-between;
+}
+
+.price__items .price__item{
+  background-color: #FFFFFF;
+  width: 360px;
+  margin-bottom: 200px;
+}
+
+.price__name{
+Font-weight: 400;
+Font-size: 36px;
+line-height: 40px;
+letter-spacing: 0px;
+color: rgb(1, 53, 62);
+margin-bottom: 58px;
+text-align: center;
+padding-top: 45px;
+}
+
+.price__item-element{
+  font-weight: 400;
+  color: rgb(36, 33, 33);
+  padding: 0 0 20px 31px;
+}
+
+.price__num{
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0;
+  color: rgb(1, 53, 62);
+  text-align: center;
+  padding: 41px 0 45px;
+}
+
+.price .price__item .price__num span{
+  height: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: rgb(1, 53, 62);
+  vertical-align: middle;
+}
+
+.price__num-standart{
+padding-top: 117px;
+}
+
+.price__map{
+  background-color: #FFFFFF;
+  /* padding: 200px 224px; */
+  padding: 200px 0 200px;
+  background-image: url('../images/price/price-map.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1040px;
+}
+
+.price__pointer-img{
+  margin: 0 auto;
+  padding-top: 103px;
+}
+
+.connection__title-inner{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 243px;
+}
+
+.connection__form{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 569px;
+}
+.form input,
+.connection .from textarea{
+  border: none;
+  border-bottom: 2px solid rgb(218, 218, 218) ;
+  display: block;
+  width: 100%;
+  padding: 18px 0;
+}
+
+.form input::placeholder,
+.form textarea::placeholder{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: rgb(0, 178, 160);
+}
+
+.from textarea{
+  padding: 59px 392px 100px 0;
+  resize: none;
+  min-height: 156px;
+}
+
+.form button{
+  background-color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+  color: rgb(36, 33, 33);
+  width: 350px;
+  height: 70px;
+}
+
+.connection__info{
+  margin-left: 31px;
+  background-color: rgb(248, 248, 248);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.connection__info p{
+  padding-left: 52px;
+  margin: 65px 0;
+}
