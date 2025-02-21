@@ -586,6 +586,7 @@ padding-top: 117px;
 
 .connection__inner{
   display: flex;
+  height: 460px;
 }
 
 .form{
@@ -614,12 +615,17 @@ padding-top: 117px;
   margin-bottom: 73px;
   padding: 55px 309px 100px 0;
   overflow: hidden;
-
+  resize: none;
 }
 
 .connection__button{
   margin-bottom: 200px;
   max-width: 350px;
+  padding: 24px 0 23px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+  color: rgb(36, 33, 33);
 }
 
 .name{
@@ -633,5 +639,53 @@ padding-top: 117px;
 .connection__info{
   margin-left: 31px;
   background-color: rgb(248, 248, 248);
+  width: 600px;
   
+}
+
+.one{
+  padding: 49px 0 65px;
+}
+
+.two{
+  padding-bottom: 65px;
+}
+
+.connection__info p{
+  padding-left:52px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: rgb(36, 33, 33);
+}
+
+.social__network{
+text-align: center;
+padding: 200px 0 200px;
+}
+
+.social__network span + span{
+  margin-left: 10px;
+}
+
+.instagram,
+.facebook,
+.youtube{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+  color: rgb(36, 33, 33);
+}
+
+.facebook{
+color:rgb(0, 178, 160);
+}
+
+.footer{
+  background-color: rgb(0, 178, 160);
+}
+
+.footer__logo img{
+  margin: 0 auto;
+  padding: 89px 0 69px; 
 }
