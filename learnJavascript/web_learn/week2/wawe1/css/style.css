@@ -586,7 +586,7 @@ padding-top: 117px;
 
 .connection__inner{
   display: flex;
-  height: 460px;
+  min-height: 360px;
 }
 
 .form{
@@ -626,6 +626,8 @@ padding-top: 117px;
   font-size: 24px;
   line-height: 18px;
   color: rgb(36, 33, 33);
+  background-color:#FFFFFF;
+   border:1px solid #C4C4C4;
 }
 
 .name{
@@ -637,26 +639,14 @@ padding-top: 117px;
 }
 
 .connection__info{
+  background-color: #F8F8F8;
   margin-left: 31px;
-  background-color: rgb(248, 248, 248);
-  width: 600px;
-  
+  padding: 49px 230px 71px 52px ;
 }
 
-.one{
-  padding: 49px 0 65px;
-}
-
-.two{
-  padding-bottom: 65px;
-}
-
-.connection__info p{
-  padding-left:52px;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
-  color: rgb(36, 33, 33);
+.info__text,
+.info__number{
+  margin-bottom: 65px;
 }
 
 .social__network{
