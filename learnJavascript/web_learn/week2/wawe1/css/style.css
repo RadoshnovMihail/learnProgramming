@@ -586,15 +586,17 @@ padding-top: 117px;
 
 .connection__inner{
   display: flex;
-  min-height: 360px;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 460px;
 }
 
+
 .form{
-  width: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
-  max-width: 569px;
+  margin-right: 20px;
 }
 
 .form input,
@@ -604,7 +606,6 @@ padding-top: 117px;
 }
 .form input::placeholder,
 .form textarea::placeholder{
-
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
@@ -612,10 +613,16 @@ padding-top: 117px;
 }
 
 .form textarea{
+  padding-top: 55px;
+  min-height: 211px;
   margin-bottom: 73px;
-  padding: 55px 309px 100px 0;
-  overflow: hidden;
   resize: none;
+}
+
+.form textarea::placeholder{
+  max-width: 260px;
+  
+
 }
 
 .connection__button{
@@ -640,8 +647,21 @@ padding-top: 117px;
 
 .connection__info{
   background-color: #F8F8F8;
+  flex: 1;
   margin-left: 31px;
-  padding: 49px 230px 71px 52px ;
+}
+
+.connection__info p,
+.connection__info address{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: rgb(36, 33, 33);
+  padding-left: 52px;
+}
+
+.info__text{
+  padding-top: 49px;
 }
 
 .info__text,
