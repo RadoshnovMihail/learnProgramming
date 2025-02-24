@@ -133,6 +133,7 @@ body {
 .school__learn-inner {
   display: flex;
   justify-content: center;
+  align-items: baseline;
   margin-bottom: 102px;
 }
 
@@ -213,37 +214,34 @@ body {
   margin-bottom: 30px;
 }
 
-.coaches__inner {
-  display: flex;
-  min-height: 100vh;
+.coaches{
+  background-image: url('../images/кectangle88.jpeg');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right top;
 }
 
-.coaches__title {
+.coaches__inner{
+  max-width: 507px;
+}
+
+.coaches__title-inner{
+display: flex;
+justify-content: flex-start;
+padding-top: 200px;
+}
+
+.coaches__title{
   white-space: nowrap;
+
 }
 
-.coaches__title-inner {
-  display: flex;
-  width: 552px;
-  text-align: center;
-  padding-top: 200px;
+.coaches__text{
+padding: 100px 0 317px;
 }
 
-.coaches__img-dash {
-  margin-bottom: 41px;
-  margin-top: 20px;
-}
-
-.coaches__images {
-  max-width: 960px;
-  max-height: 850px;
-  margin-left: 41px;
-  margin-bottom: 200px;
-}
-
-.coaches__text {
+.coaches__text p{
   margin-bottom: 30px;
-  width: 507px;
 }
 
 .gallery__title-inner {
@@ -674,8 +672,12 @@ text-align: center;
 padding: 200px 0 200px;
 }
 
-.social__network span + span{
+.social__network a + a{
   margin-left: 10px;
+}
+
+.social__network a{
+text-decoration: none;
 }
 
 .instagram,
