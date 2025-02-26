@@ -35,6 +35,10 @@ body {
   padding-top: 35px;
 }
 
+.menu-btn{
+  display: none;
+}
+
 .header__menu {
   margin-left: 185px;
   align-self: center;
@@ -742,6 +746,52 @@ color:rgb(0, 178, 160);
       line-height: 203px;
     }
 }
+@media(max-width: 768px){
+  .header__menu-list{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: white;
+    display: block;
+    text-align: center;
+    transform: translateY(-200%);
+  }
+  .header__menu-link{
+    padding: 14px 0;
+    color: black;
+  }
+  nav .header__menu-list{
+    padding: 15px 0;
+    padding-top: 90px;
+  }
+  .menu-btn{
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-left: auto;
+    margin-bottom: 108px;
+    position: relative;
+    z-index: 1;
+  }
+  .header__menu-item + .header__menu-item {
+    margin-left: 0;
+  }
+  .header__logo{
+    margin-bottom: 108px;
+    position: relative;
+    z-index: 2;
+
+  }
+  .header__menu-inner--active .header__menu-list{
+    transform: translateY(0%);
+    transition: all .5s;
+  }
+  .header__menu-inner--active .header__logo path{
+    fill: black;
+  }
+}
 
 @media(max-width: 723px){
   .header__menu-link{
@@ -754,34 +804,59 @@ color:rgb(0, 178, 160);
 
 }
 
-@media(max-width: 622px){
+@media(max-width: 644px){
   .header__menu-link{
-    font-size: 16px;
+    font-size: 20px;
     }
     .header__title {
-      font-size: 135px;
-      line-height: 155px;
+      font-size: 119px;
+      line-height: 146px;
+      padding-top: 248px;
   }
-  .header__menu-link{
-    font-size: 14px;
-    }
-    .header__title {
-      font-size: 117px;
-      line-height: 147px;
+  .header__subtitle{
+    font-size: 20px;
+    margin-bottom: 214px;
   }
   .header__menu-item + .header__menu-item {
-    margin-left:18px;
+    margin-left:10px;
   }
 
 }
-
-@media(max-width: 587px){
+@media(max-width: 592px){
   .header__menu-link{
-    font-size: 19px;
+    font-size: 18px;
     }
-    .header__title {
-      font-size: 126px;
-      line-height: 146px;
-  }
-
+}
+@media(max-width: 552px){
+  .header__menu-link{
+    font-size: 16px;
+    }
+    .header__title{
+      font-size: 119px;
+      line-height: 131px;
+    }
+}
+@media(max-width: 504px){
+  .header__menu-link{
+    font-size: 14px;
+    }
+    .header__title{
+      font-size: 110px;
+      line-height: 125px;
+    }
+}
+@media(max-width: 468px){
+  .header__menu-link{
+    font-size: 14px;
+    }
+    .header__title{
+      font-size: 88px;
+      line-height: 108px;
+    }
+    .header__subtitle{
+      font-size: 17px;
+    }
+}
+@media(max-width: 452px){
+  
 }
