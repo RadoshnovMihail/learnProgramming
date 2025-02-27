@@ -210,7 +210,7 @@ body {
 }
 
 .school__information-text-item {
-  width: 600px;
+  max-width: 600px;
   height: 53px;
 }
 
@@ -237,7 +237,6 @@ padding-top: 200px;
 
 .coaches__title{
   white-space: nowrap;
-
 }
 
 .coaches__text{
@@ -706,6 +705,93 @@ color:rgb(0, 178, 160);
   padding: 89px 0 69px; 
 }
 
+@media(max-width:1749px){
+  .coaches__title-inner{
+    padding-top: 158px;
+  }
+}
+@media(max-width:1511px){
+  .coaches__title-inner{
+    padding-top: 79px;
+  }
+}
+@media(max-width:1440px){
+  .coaches__title-inner{
+    padding-top: 59px;
+  }
+}
+
+@media(max-width: 1300px){
+  .school__learn-group{
+    margin-left: 23px;
+  }
+  .school__information-text{
+    margin-left: 136px;
+  }
+}
+
+@media(max-width: 1222px){
+  .coaches__title-inner{
+    padding-top: 5px;
+  }
+}
+
+@media(max-width: 1137px){
+  .school_information{
+    display: block;
+  }
+  .school__information-text{
+    padding-top: 30px;
+    margin-left: 15px;
+    width: 100%;
+  }
+  .school__learn-inner{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .school__title-position{
+    justify-content: flex-start;
+  }
+  .flight__title{
+    padding-top: 10px;
+  }
+  .school__text{
+    width: 100%;
+  }
+  .school__title-inner{
+    margin-bottom: 60px;
+  }
+  .coaches{
+    background-image: none;
+  }
+  .coaches__title-inner{
+   justify-content: center;
+  }
+  .coaches__inner{
+   max-width: none;
+    width: 100%;
+  }
+  .coaches__text{
+    padding: 50px 0 317px;
+  }
+
+}
+
+@media(max-width: 1096px){
+  .about__text-inner{
+    gap: 30px 30px;
+    padding-top: 65px;
+  }
+  .title{
+    font-size: 30px;
+    line-height: 10px;
+  }
+  .coaches__text{
+    padding-right: 10px;
+  }
+}
+
 @media(max-width: 1022px){
  .header__menu{
  margin-left: 126px;
@@ -713,6 +799,10 @@ color:rgb(0, 178, 160);
 .header__title{
   font-size: 178px;
   line-height: 203px;
+}
+.about__text-inner{
+  display: flex;
+  flex-direction: column;
 }
 }
 
@@ -820,6 +910,9 @@ color:rgb(0, 178, 160);
   .header__menu-item + .header__menu-item {
     margin-left:10px;
   }
+  .about__title-inner h2{
+    font-size: 23px;
+  }
 
 }
 @media(max-width: 592px){
@@ -858,5 +951,7 @@ color:rgb(0, 178, 160);
     }
 }
 @media(max-width: 452px){
-  
+  .about__title-inner h2{
+    font-size: 16px;
+  }
 }
