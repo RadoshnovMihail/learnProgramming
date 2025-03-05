@@ -3,7 +3,6 @@
 *::before {
   box-sizing: border-box;
 }
-
 /* font-family: "Roboto Condensed", serif;
 font-family: "Raleway", serif; */
 body {
@@ -59,6 +58,7 @@ body {
   color: rgb(255, 255, 255);
   padding: 0 1px 5px;
   transition: all 1s;
+  text-decoration: none;
 }
 
 .header__menu-link:hover {
@@ -246,7 +246,9 @@ padding: 100px 0 317px;
 .coaches__text p{
   margin-bottom: 30px;
 }
-
+.gallery{
+  padding-top: 200px;
+}
 .gallery__title-inner {
   display: flex;
   justify-content: center;
@@ -312,7 +314,8 @@ padding: 100px 0 317px;
 .gallery__image-3 {
   width: 250px;
   height: 280px;
-  justify-content: end;
+  /* justify-content: end; */
+  right: 0;
 }
 .gallery__image-4 {
   width: 240px;
@@ -329,7 +332,8 @@ padding: 100px 0 317px;
   width: 580px;
   height: 280px;
   position: absolute;
-  left: 610px;
+  /* left: 610px; */
+  right: 0;
 }
 
 .gallery__btn-add {
@@ -730,11 +734,30 @@ color:rgb(0, 178, 160);
   }
 }
 
-@media(max-width: 1222px){
+@media(max-width: 1224px){
   .coaches__title-inner{
     padding-top: 5px;
   }
+  .gallery__content-inner{
+    grid-gap: 40px;
+  }
+  .gallery__image-6,
+  .gallery__image-6{
+    position: static;
+  }
+  .category-c{
+   width: 100%;
+  }
+  .gallery__content-inner{
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 20px
+  }
+  .gallery__btn{
+    display: block;
+  }
 }
+
+
 
 @media(max-width: 1137px){
   .school_information{
@@ -810,6 +833,12 @@ color:rgb(0, 178, 160);
   .header__menu{
     margin-left: 78px;
     }
+
+}
+@media(max-width: 924px){
+  .blockquote span{
+  margin-left: 0;
+  }
 
 }
 @media(max-width: 884px){
@@ -890,6 +919,12 @@ color:rgb(0, 178, 160);
     .header__title {
       font-size: 140px;
       line-height: 176px;
+  }
+
+}
+@media(max-width: 723px){
+  .blockquote{
+    background-color:#FFFFFF;
   }
 
 }
