@@ -1,4 +1,11 @@
 document.querySelector('#test').onkeypress = function(e){
-    console.log(e.key);
-    return false;
+    const __isAlpha = /^[A-ZА-ЯЕ]+$/i.test(this.value);
+    if(!__isAlpha){
+        console.log('Введите корректные данные');
+    } else {
+        document.querySelector('#test').addEventListener('input', function (e) {
+            this.value = this.value.toLowerCase();
+        });
+    }
+
 }
